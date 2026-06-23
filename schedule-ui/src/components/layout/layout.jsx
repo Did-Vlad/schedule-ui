@@ -31,16 +31,14 @@ export default function Layout() {
     to="/groups"
               className={({ isActive }) =>
                 isActive ? 'text-blue-600 font-semibold' : 'text-slate-600 hover:text-blue-600'
-              }
-            >
+              }>
               Групи
             </NavLink>
             <NavLink
               to="/teachers"
               className={({ isActive }) =>
                 isActive ? 'text-blue-600 font-semibold' : 'text-slate-600 hover:text-blue-600'
-              }
-            >
+              }>
               Викладачі
             </NavLink>
             <Button variant="outline" size="sm" onClick={logout}>
