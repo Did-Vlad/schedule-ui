@@ -33,8 +33,7 @@ export default function TeachersPage() {
           <Card key={t.id} className="hover:shadow-md transition-shadow">
             <CardHeader className="pb-2">
               <CardTitle className="text-base">{t.name}</CardTitle>
-              <p className="text-sm text-slate-500">🏛️ {t.department}</p>
-            </CardHeader>
+              <p className="text-sm text-slate-500">{t.department}</p>            </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-1">
                 {(t.subjects || []).map((s, i) => (
