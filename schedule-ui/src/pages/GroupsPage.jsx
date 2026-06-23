@@ -40,7 +40,7 @@ export default function GroupsPage() {
             </CardHeader>
             <CardContent className="space-y-1">
               <p className="text-sm text-slate-600">{g.specialty}</p>
-              <p className="text-sm text-slate-500">👥 {g.students} студентів</p>
+              <p className="text-sm text-slate-500">{g.students} студентів</p>
             </CardContent>
           </Card>
         ))}
