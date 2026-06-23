@@ -15,8 +15,7 @@ export default function TeachersPage() {
 
   useEffect(() => {
     api.getTeachers()
-      .then(data => setTeachers(Array.isArray(data) ? data : MOCK))
-      .catch(() => setTeachers(MOCK))
+    .then(data => setTeachers(Array.isArray(data) && data.length > 0 ? data : MOCK))      .catch(() => setTeachers(MOCK))
       .finally(() => setLoading(false));
   }, []);
 
