@@ -15,7 +15,7 @@ export default function GroupsPage() {
 
   useEffect(() => {
     api.getGroups()
-      .then(data => setGroups(Array.isArray(data) ? data : MOCK))
+    .then(data => setGroups(Array.isArray(data) && data.length > 0 ? data : MOCK))
       .catch(() => setGroups(MOCK))
       .finally(() => setLoading(false));
   }, []);
